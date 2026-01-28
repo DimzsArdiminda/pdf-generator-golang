@@ -41,7 +41,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"title\": \"Laporan Kunjungan Pasien\",\r\n  \"institution_name\": \"RS Sehat Sentosa\",\r\n  \"address\": \"Jl. Kesehatan No. 123, Jakarta\",\r\n  \"phone\": \"(021) 123-4567\",\r\n  \"content\": \"Berikut adalah laporan kunjungan pasien bulan Januari 2025. Data ini bersifat rahasia dan hanya digunakan untuk keperluan internal.\"\r\n}\r\n",
+          "raw": "\r\n{\r\n  \"title\": \"Laporan Kunjungan Pasien\",\r\n  \"institution_name\": \"RS Sehat Sentosa\",\r\n  \"address\": \"Jl. Kesehatan No. 123, Jakarta\",\r\n  \"phone\": \"(021) 123-4567\",\r\n  \"logo_url\": \"http://localhost:8080/logo.png\",\r\n  \"content\": \"Berikut adalah laporan kunjungan pasien bulan Januari 2025. Total kunjungan mencapai 1,234 pasien dengan berbagai keluhan kesehatan. Mayoritas pasien datang untuk pemeriksaan rutin dan konsultasi kesehatan. Tim medis telah memberikan pelayanan terbaik dengan standar kesehatan yang tinggi. Laporan ini dibuat untuk dokumentasi dan evaluasi kinerja rumah sakit.\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -108,7 +108,7 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/pdf/3",
+          "raw": "http://localhost:8080/api/pdf/25",
           "protocol": "http",
           "host": [
             "localhost"
@@ -117,7 +117,7 @@
           "path": [
             "api",
             "pdf",
-            "3"
+            "25"
           ]
         }
       },
