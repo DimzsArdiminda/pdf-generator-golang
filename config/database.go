@@ -12,7 +12,6 @@ import (
 var DB *sql.DB
 
 func ConnectDB() {
-	// Get database configuration from environment variables
 	host := getEnv("DB_HOST", "localhost")
 	port := getEnv("DB_PORT", "5432")
 	user := getEnv("DB_USER", "postgres")
@@ -28,7 +27,6 @@ func ConnectDB() {
 		log.Fatal("Failed to open database:", err)
 	}
 
-	// Verify the connection
 	err = db.Ping()
 	if err != nil {
 		log.Fatal("Failed to connect to database:", err)
@@ -38,7 +36,6 @@ func ConnectDB() {
 	log.Println("Database connected successfully")
 }
 
-// getEnv gets environment variable with fallback default value
 func getEnv(key, defaultValue string) string {
 	if value := os.Getenv(key); value != "" {
 		return value

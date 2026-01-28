@@ -2,6 +2,7 @@ CREATE TABLE pdf_files (
     id BIGSERIAL PRIMARY KEY,
     filename VARCHAR(255) NOT NULL,
     original_name VARCHAR(255),
+    logo_url VARCHAR(50),
     filepath VARCHAR(500) NOT NULL,
     size BIGINT,
     status VARCHAR(20) NOT NULL,
