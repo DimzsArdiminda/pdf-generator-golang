@@ -301,12 +301,13 @@ CREATE TABLE pdf_files (
 curl -X POST http://localhost:8080/api/pdf/generate \
   -H "Content-Type: application/json" \
   -d '{
-    "title": "Laporan Bulanan",
-    "institution_name": "PT. Contoh Indonesia",
-    "address": "Jl. Sudirman No. 123, Jakarta",
-    "phone": "(021) 555-0123",
-    "content": "Ini adalah isi dari laporan bulanan yang berisi berbagai informasi penting."
-  }'
+  "title": "Laporan Kunjungan Pasien",
+  "institution_name": "RS Sehat Sentosa",
+  "address": "Jl. Kesehatan No. 123, Jakarta",
+  "phone": "(021) 123-4567",
+  "logo_url": "http://localhost:8080/logo.png",
+  "content": "Berikut adalah laporan kunjungan pasien bulan Januari 2025. Total kunjungan mencapai 1,234 pasien dengan berbagai keluhan kesehatan. Mayoritas pasien datang untuk pemeriksaan rutin dan konsultasi kesehatan. Tim medis telah memberikan pelayanan terbaik dengan standar kesehatan yang tinggi. Laporan ini dibuat untuk dokumentasi dan evaluasi kinerja rumah sakit."
+}'
 ```
 
 #### List PDF
