@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "b1b86b0f-8301-4c64-935d-a4ab76eb4812",
+    "name": "PDF-GENERATOR",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42465258",
+    "_collection_link": "https://go.postman.co/collection/42465258-b1b86b0f-8301-4c64-935d-a4ab76eb4812?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "List",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/pdf/list",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "pdf",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Laporan Kunjungan Pasien\",\r\n  \"institution_name\": \"RS Sehat Sentosa\",\r\n  \"address\": \"Jl. Kesehatan No. 123, Jakarta\",\r\n  \"phone\": \"(021) 123-4567\",\r\n  \"content\": \"Berikut adalah laporan kunjungan pasien bulan Januari 2025. Data ini bersifat rahasia dan hanya digunakan untuk keperluan internal.\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/pdf/generate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "pdf",
+            "generate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPLOAD",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "e9c16cb5-f08e-44d5-886c-bec03ab57a36",
+              "src": "postman-cloud:///1f0fbfab-6224-43a0-b2c2-daa8e9f059ed"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/pdf/upload",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "pdf",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/pdf/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "pdf",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
