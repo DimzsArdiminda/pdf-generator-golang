@@ -186,11 +186,12 @@ Server akan berjalan di `http://localhost:8080`
 
 ```json
 {
-  "title": "Judul Laporan",
-  "institution_name": "Nama Institusi",
-  "address": "Alamat Lengkap Institusi",
+  "title": "Laporan Kunjungan Pasien",
+  "institution_name": "RS Sehat Sentosa",
+  "address": "Jl. Kesehatan No. 123, Jakarta",
   "phone": "(021) 123-4567",
-  "content": "Isi content laporan yang akan di-generate menjadi PDF"
+  "logo_url": "http://localhost:8080/logo.png",
+  "content": "Berikut adalah laporan kunjungan pasien bulan Januari 2025. Total kunjungan mencapai 1,234 pasien dengan berbagai keluhan kesehatan. Mayoritas pasien datang untuk pemeriksaan rutin dan konsultasi kesehatan. Tim medis telah memberikan pelayanan terbaik dengan standar kesehatan yang tinggi. Laporan ini dibuat untuk dokumentasi dan evaluasi kinerja rumah sakit."
 }
 ```
 
